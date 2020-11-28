@@ -10,7 +10,15 @@ function generateReadme(answers){
         githubUsername,
         email,
     } = answers;
-    return `title: ${ title }`
+    
+    return `title: ${ title },
+            description: ${ description },
+            installation: ${ contributions },
+            test: ${ test },
+            license: ${ license },
+            licenseURL: ${ licenseURL },
+            githubUsername: ${ githubUsername },
+            email: ${ email }`
     
 }
 
