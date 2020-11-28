@@ -1,42 +1,41 @@
 const inquirer = require("inquirer");
 
-// array of questions for user
+//  questions for user
 const questions = inquirer.prompt([
     {
         type: "input",
-        message: "What would you like your title to be called?",
+        message: "What is your Project Title?",
         name: "title"
     },
     {
         type: "input",
-        message: "Give a brief description of your work",
+        message: "Provide a detailed description of your project",
         name: "description"
     },
     {
         type: "input",
-        message: "What installation instructions are needed?",
+        message: "What are the steps required to install your project? Please provide a step-by-step description",
         name: "installation"
     },
     {
         type: "input",
-        message: "What usage information would you like displayed?",
-        name: "usage"
+        message: "Enter the GitHub usernames of any contributors if any, if multiple contributors please separate usernames with a comma",
+        name: "contributions"
     },
     {
         type: "input",
-        message: "What are the contribution guidelines?",
-        name: "contribution"
-    },
-    {
-        type: "input",
-        message: "What are the instructions for testing?",
+        message: "Provide examples on how to run tests",
         name: "test"
     },
     {
-        //choose a license
         type: "input",
-        message: "",
-        name: ""
+        message: "What license are you wanting to use?",
+        name: "license"
+    },
+    {
+        type:"input",
+        message:"Input the license URL",
+        name:"licenseURL"
     },
     {
         type: "input",
@@ -50,6 +49,17 @@ const questions = inquirer.prompt([
     },
 
 ]);
+const gitTitle = questions.title;
+const gitDescription = questions.description;
+const gitInstallation = questions.installation;
+const gitContributions = questions.contributions;
+const gitTest = questions.test;
+const gitLicense = questions.license;
+const gitLicenseURL = questions.licenseURL;
+const gitUsername = questions.github-username;
+const gitEmail = questions.email;
+
+
 
 // function to write README file
 function writeToFile(fileName, data) {
