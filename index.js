@@ -1,7 +1,10 @@
 const inquirer = require("inquirer");
+const fs = require("fs");
+const generateReadme = require("./generateReadme");
+
 
 //  questions for user
-const questions = inquirer.prompt([
+const questions = [
     {
         type: "input",
         message: "What is your Project Title?",
@@ -33,14 +36,14 @@ const questions = inquirer.prompt([
         name: "license"
     },
     {
-        type:"input",
-        message:"Input the license URL",
-        name:"licenseURL"
+        type: "input",
+        message: "Input the license URL",
+        name: "licenseURL"
     },
     {
         type: "input",
         message: "What is your GitHub username?",
-        name: "github-username"
+        name: "githubUsername"
     },
     {
         type: "input",
@@ -48,27 +51,30 @@ const questions = inquirer.prompt([
         name: "email"
     },
 
-]);
-const gitTitle = questions.title;
-const gitDescription = questions.description;
-const gitInstallation = questions.installation;
-const gitContributions = questions.contributions;
-const gitTest = questions.test;
-const gitLicense = questions.license;
-const gitLicenseURL = questions.licenseURL;
-const gitUsername = questions.github-username;
-const gitEmail = questions.email;
+];
+
 
 
 
 // function to write README file
 function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, () =>{
+        console.log("file written")
+    })
+
 }
 
 // function to initialize program
-function init() {
+function init(questions) {
+    inquirer.prompt(questions)
+        .then(answers => {
+            console.log(answers);
+            const readMe = generateReadme(answers);
+            console.log(readMe)
+            writeToFile("README.md",readMe)
+        })
 
 }
 
 // function call to initialize program
-init();
+init(questions);
