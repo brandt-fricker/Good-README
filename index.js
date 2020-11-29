@@ -11,7 +11,7 @@ const questions = [
         name: "title"
     },
     {
-        type: "input",
+        type: "editor",
         message: "Provide a detailed description of your project",
         name: "description"
     },
@@ -22,22 +22,34 @@ const questions = [
     },
     {
         type: "input",
+        message: "How do you use your program?",
+        name: "usage"
+
+    },
+    {
+        type: "input",
         message: "Provide examples on how to run tests",
         name: "test"
     },
     {
-        type: "input",
+        type: "list",
         message: "What license are you wanting to use?",
+        choices: [
+                    {name:"MIT",
+                     value:"MIT",
+                     short:"MIT"  },
+                    {name:"Apache 2.0",
+                     value:"Apache 2.0",
+                     short:"Apache 2.0" },
+                    {name:"GNU General Public License v3.0",
+                     value:"GPLv3",
+                     short:"GPLv3"}
+                ],
         name: "license"
     },
     {
         type: "input",
-        message: "Input the license URL",
-        name: "licenseURL"
-    }, 
-    {
-        type: "input",
-        message: "Enter the GitHub usernames of any contributors if any, if multiple contributors please separate usernames with a comma",
+        message: "Enter any contribution guidelines",
         name: "contributions"
     },
     {
@@ -53,6 +65,17 @@ const questions = [
 
 ];
 
+// function badgeSelection(license){
+//     switch (license){
+//         case "MIT":
+//             return 'https://img.shields.io/badge/license-MIT-blue';
+//         case "Apache 2.0":
+//             return 'https://img.shields.io/badge/license-Apache%202.0-blue';
+//         case "GPLv3":
+//             return 'https://img.shields.io/badge/license-GPLv3-blue';
+                  
+//     }
+// }
 
 
 
@@ -72,7 +95,7 @@ function init(questions) {
             console.log(answers);
             const readMe = generateReadme(answers);
             console.log(readMe)
-            console.log(readMe.title)
+            // console.log(readMe.title)
 
 
             writeToFile("README.md",readMe)
@@ -82,3 +105,8 @@ function init(questions) {
 
 // function call to initialize program
 init(questions);
+
+
+// https://img.shields.io/badge/license-MIT-blue
+// https://img.shields.io/badge/license-Apache%202.0-blue
+// https://img.shields.io/badge/license-GPLv3-blue
