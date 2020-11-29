@@ -1,8 +1,8 @@
-function generateReadme(answers){
-    const { 
-        title, 
-        description, 
-        installation, 
+function generateReadme(answers) {
+    const {
+        title,
+        description,
+        installation,
         contributions,
         test,
         license,
@@ -10,16 +10,18 @@ function generateReadme(answers){
         githubUsername,
         email,
     } = answers;
-    
-    return `title: ${ title },
-            description: ${ description },
-            installation: ${ contributions },
-            test: ${ test },
-            license: ${ license },
-            licenseURL: ${ licenseURL },
-            githubUsername: ${ githubUsername },
-            email: ${ email }`
-    
+
+    return `
+            title: ${title},
+            description: ${description},
+            installation: ${contributions},
+            test: ${test},
+            license: ${license},
+            licenseURL: ${licenseURL},
+            githubUsername: ${githubUsername},
+            email: ${email}
+            `
+
 }
 
 module.exports = generateReadme;

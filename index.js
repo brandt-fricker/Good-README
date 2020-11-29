@@ -22,11 +22,6 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter the GitHub usernames of any contributors if any, if multiple contributors please separate usernames with a comma",
-        name: "contributions"
-    },
-    {
-        type: "input",
         message: "Provide examples on how to run tests",
         name: "test"
     },
@@ -39,6 +34,11 @@ const questions = [
         type: "input",
         message: "Input the license URL",
         name: "licenseURL"
+    }, 
+    {
+        type: "input",
+        message: "Enter the GitHub usernames of any contributors if any, if multiple contributors please separate usernames with a comma",
+        name: "contributions"
     },
     {
         type: "input",
@@ -60,6 +60,7 @@ const questions = [
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, () =>{
         console.log("file written")
+       
     })
 
 }
@@ -71,6 +72,9 @@ function init(questions) {
             console.log(answers);
             const readMe = generateReadme(answers);
             console.log(readMe)
+            console.log(readMe.title)
+
+
             writeToFile("README.md",readMe)
         })
 
