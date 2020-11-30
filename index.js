@@ -82,7 +82,7 @@ const questions = [
 // function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, () =>{
-        console.log("file written")
+        console.log("Your README file has been created!")
        
     })
 
@@ -100,6 +100,7 @@ function init(questions) {
 
             writeToFile("README.md",readMe)
         })
+        
 
 }
 
