@@ -13,41 +13,41 @@ function generateReadme(answers) {
 
 return `
 # ${title}
----
-![License:${license}] (${badgeSelection(license)})
+
+![License:${license}](${badgeSelection(license)})
 
 ## Description
----
+
  ${description}
 
  ## Table of Contents
- ---
+ 
  - [Installation](#installation)
- - [Usage] (#usage)
- - [Testing] (#test)
- - [License] (#license)
- - [Questions] (#questions)
+ - [Usage](#usage)
+ - [Testing](#test)
+ - [License](#license)
+ - [Questions](#questions)
 
 
 ## Installation 
----
+
 ${installation}
 
 ## Usage
----
+
 ${usage}
             
 ## Testing 
----
+
 ${test}
 
 ## License
----
+
 This project uses ${license}
             
 ## Questions
-Find me  [on GitHub] (https://github.com/${githubUsername})
-You can email with questions at [${email}] (mailto:${email}) `
+Find me  [on GitHub](https://github.com/${githubUsername})
+You can email with questions at [${email}](mailto:${email}) `
             
 
 }
