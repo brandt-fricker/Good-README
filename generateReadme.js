@@ -4,49 +4,50 @@ function generateReadme(answers) {
         description,
         installation,
         contributions,
+        usage,
         test,
         license,
         githubUsername,
         email,
     } = answers;
 
-    return `
-            # ${title}
-            ---
-            ![License:${license}] (${badgeSelection(license)})
+return `
+# ${title}
+---
+![License:${license}] (${badgeSelection(license)})
 
-            ## Description
-            ---
-             ${description}
+## Description
+---
+ ${description}
 
-             ## Table of Contents
-             ---
-             - [Installation](#installation)
-             - [Usage] (#usage)
-             - [Testing] (#test)
-             - [License] (#license)
-             - [Questions] (#questions)
+ ## Table of Contents
+ ---
+ - [Installation](#installation)
+ - [Usage] (#usage)
+ - [Testing] (#test)
+ - [License] (#license)
+ - [Questions] (#questions)
 
 
-            ## Installation 
-            ---
-            ${installation}
+## Installation 
+---
+${installation}
 
-            ## Usage
-            ---
-            ${usage}
+## Usage
+---
+${usage}
             
-            ## Testing 
-            ---
-            ${test}
+## Testing 
+---
+${test}
 
-            ## License
-            ---
-            This project uses ${license}
+## License
+---
+This project uses ${license}
             
-            ## Questions
-            Find me  [on GitHub] (https://github.com/${githubUsername})
-            You can email with questions at [${email}] (mailto:${email}) `
+## Questions
+Find me  [on GitHub] (https://github.com/${githubUsername})
+You can email with questions at [${email}] (mailto:${email}) `
             
 
 }
