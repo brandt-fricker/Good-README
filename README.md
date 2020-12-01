@@ -1,11 +1,11 @@
 
-# title
+# lsjf
 
-![License:GPLv3](https://img.shields.io/badge/license-GPLv3-blue)
+![License:MIT](https://img.shields.io/badge/license-MIT-blue)
 
 ## Description
 
- dlkf
+ lsjf
 
  ## Table of Contents
  
@@ -18,24 +18,31 @@
 
 ## Installation 
 
+How to install in the terminal:
+
+<pre>
 <code>
 npm install -y
 </code>
+</pre>
 
 ## Usage
 
+Run this command to run the application and create your README:
+<pre>
 <code>
 node index.js
 </code>
+</pre>
 
 ## Testing 
 
-lsjf
+lsdjf
 
 ## License
 
-This project uses GPLv3
+This project uses MIT
             
 ## Questions
-Find me on [GitHub](https://github.com/lskdf)
-You can email with questions at [dlfh](mailto:dlfh) 
+Find me on [GitHub](https://github.com/lshf)
+You can email with questions at [lsafh](mailto:lsafh) 

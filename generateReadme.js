@@ -31,15 +31,23 @@ return `
 
 ## Installation 
 
+How to install in the terminal:
+
+<pre>
 <code>
 ${installation}
 </code>
+</pre>
 
 ## Usage
 
+Run this command to run the application and create your README:
+
+<pre>
 <code>
 ${usage}
 </code>
+</pre>
 
 ## Testing 
 
