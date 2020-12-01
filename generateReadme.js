@@ -31,12 +31,16 @@ return `
 
 ## Installation 
 
+<code>
 ${installation}
+</code>
 
 ## Usage
 
+<code>
 ${usage}
-            
+</code>
+
 ## Testing 
 
 ${test}
