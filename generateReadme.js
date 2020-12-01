@@ -46,11 +46,12 @@ ${test}
 This project uses ${license}
             
 ## Questions
-Find me  [on GitHub](https://github.com/${githubUsername})
+Find me on [GitHub](https://github.com/${githubUsername})
 You can email with questions at [${email}](mailto:${email}) `
             
 
 }
+// function to display license badge of choice
 function badgeSelection(license){
     switch (license){
         case "MIT":
