@@ -29,6 +29,7 @@ return `
  - [Installation](#installation)
  - [Usage](#usage)
  - [Testing](#test)
+ - [Contributors](#contributions)
  - [License](#license)
  - [Questions](#questions)
 
@@ -63,7 +64,7 @@ ${contributions}
 
 ## License
 
-This project uses ${license}
+This project uses ${license} license
             
 ## Questions
 Find me on [GitHub](https://github.com/${githubUsername})
