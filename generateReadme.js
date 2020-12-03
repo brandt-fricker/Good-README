@@ -22,7 +22,7 @@ return `
 
 ### A Good README Generator in action!
 
-![working app](trimmed.gif)
+![working app](gifs/trimmed.gif)
 
  ## Table of Contents
  
