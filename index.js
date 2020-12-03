@@ -49,7 +49,7 @@ const questions = [
     },
     {
         type: "input",
-        message: "Enter any contribution guidelines",
+        message: "Enter any contribution guidelines, or contributors",
         name: "contributions"
     },
     {
