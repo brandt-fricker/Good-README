@@ -92,9 +92,9 @@ function writeToFile(fileName, data) {
 function init(questions) {
     inquirer.prompt(questions)
         .then(answers => {
-            console.log(answers);
+            // console.log(answers);
             const readMe = generateReadme(answers);
-            console.log(readMe)
+            // console.log(readMe)
             // console.log(readMe.title)
 
 

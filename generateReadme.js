@@ -20,6 +20,10 @@ return `
 
  ${description}
 
+### A Good README Generator in action!
+
+![working app](readme.gif)
+
  ## Table of Contents
  
  - [Installation](#installation)
