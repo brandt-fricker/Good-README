@@ -57,6 +57,10 @@ ${usage}
 
 ${test}
 
+## Contributions/Contributors
+
+${contributions}
+
 ## License
 
 This project uses ${license}
